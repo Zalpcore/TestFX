@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox prefHeight="381.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/11" xmlns:fx="http://javafx.com/fxml/1" fx:controller="by.stormnet.project.controllers.TableController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="377.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <TableView fx:id="table" layoutX="16.0" layoutY="15.0" prefHeight="293.0" prefWidth="612.0">
+              <columns>
+                <TableColumn fx:id="name" prefWidth="300.0" text="Name" />
+                <TableColumn fx:id="age" text="Age" />
+                <TableColumn fx:id="position" prefWidth="150.0" text="Position" />
+              </columns>
+            </TableView>
+            <Button layoutX="448.0" layoutY="333.0" mnemonicParsing="false" text="Заполнить" onAction="#onWriteTable" />
+            <Button layoutX="535.0" layoutY="333.0" mnemonicParsing="false" text="Прочитать" onAction="#onReadTable" />
+            <Button layoutX="245.0" layoutY="333.0" mnemonicParsing="false" text="Добавить" onAction="#onAddRow" />
+            <Button layoutX="335.0" layoutY="333.0" mnemonicParsing="false" text="Удалить" onAction="#onRemoveRow" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
